@@ -4,6 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: { default: 'ヨガNOTE', template: '%s | ヨガNOTE' },
   description: 'ヨガの基本ポーズから呼吸法・メンタルケアまで幅広く発信',
+  verification: { google: 'xpdiFRYHloMJxfhCT-IMD08p5na4v9WUqvPY9OrDsHs' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
