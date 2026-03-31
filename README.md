@@ -1,2 +1,3 @@
 # yoga-note-jp
-ヨガNOTE
+
+Updated: 2026-04-01
