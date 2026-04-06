@@ -14,7 +14,7 @@ export function getAllPosts() {
       const fullPath = path.join(postsDirectory, fileName)
       const fileContents = fs.readFileSync(fullPath, 'utf8')
       const { data, content } = matter(fileContents)
-      return { slug, content, ...data } as any
+      return { slug, content, ...data, date: data.date ? String(data.date).slice(0,10) : '' } as any
     })
 }
 
