@@ -114,6 +114,10 @@ async function generateArticle(keyword) {
   const rakutenSearchLink = `https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}/?af=${RAKUTEN_AFFILIATE_ID}`;
   const amazonLink = moshimoAmazonLink(keyword);
   const rakutenLink = moshimoRakutenLink(keyword);
+  // A8.net高単価アフィリエイトリンク
+  const a8_lavaLink = `[→ ホットヨガスタジオLAVAはこちら](https://px.a8.net/svt/ejp?a8mat=4AZR8U+GGZRAQ+1O96+65MEB)`;
+  const a8_orbisLink = `[→ オルビス ザ クレンジング オイルはこちら](https://px.a8.net/svt/ejp?a8mat=4AZR8U+CRMNSI+1USQ+4YM976)`;
+
 
   const typePrompts = {
     question: `「${keyword}」で悩む読者に、プロとして本音で答える記事を書いてください。読者の疑問に直接答え、最終的に商品購入へ自然に誘導してください。`,
